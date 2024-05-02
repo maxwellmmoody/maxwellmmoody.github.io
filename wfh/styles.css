@@ -1,32 +1,42 @@
-img, p, h1 ,h2, .divider {
+body {
+    background-color: #333; /* Dark grey background color */
+}
+
+.container {
+    width: 700px; /* Width of the centered section */
+    background-color: #FAF9F6; /* Light grey background color */
+    padding: 20px;
+}
+
+img, p, h1, h2, div, .divider {
     width: 100%;
-    max-width: 640px;
+    max-width: 690px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Roboto"
+    font-family: "Crimson Text";
+}
+
+h1 {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 36px;
 }
 
 img {
     display: block;
-    padding: 15px 0px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
 }
 
 .divider {
-    height: 2px;
-    background-color: #0868ac;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: linear-gradient(to right,
-    red, white);
+    height: 10px;
 }
 
-.name {
-    font-style: italic;
+.caption {
+    text-align: center;
 }
 
 .big_picture {

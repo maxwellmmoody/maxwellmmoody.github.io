@@ -1,21 +1,43 @@
-</DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
-    <title>My cool DATA 1500 project</title>
+    <title>Work from Home Trends</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+      setInterval(function() {
+        var images = document.querySelectorAll("img.animate");
+        images.forEach(function(image) {
+          if (image.src.includes("wfhcovid_frac_map1.pdf")) {
+            image.src = "images/wfhcovid_frac/wfhcovid_frac_map4.pdf";
+          } else {
+            image.src = "images/wfhcovid_frac/wfhcovid_frac_map1.pdf";
+          }
+        });
+      }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
   </head>
   <body>
-    <p class="name">By Max Moody</p>
-    <h1>Lorem Ipsum</h1>
+    <div class="container">
+    <h1>Work from Home Trends</h1>
     <div class="divider"></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <img src = "images/rhode_island.png">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <img class = "big_picture" src = "images/image1-12-2.jpg.webp">
-    <h2>About this story</h2>
-    <p>Here's a <a href="https://www.brown.edu/">link</a>.</p>
-    </body>
+    <h2>Since COVID-19, a lot has changed.</h2>
+    <p>One of the ideas we have come to accept in this 'new normal' is that working from home is a valid option for many jobs. In March 2021, a <a href='https://wfhresearch.com/data/'>survey</a> showed that over 65% of U.S. workers indicated that perceptions of working from home had improved among the people they knew.</p>
+    <p>Stay at home orders initially forced firms to accommodate working from home. But now, research shows that working from home may offer significant cost and time savings, while not hindering or potentially increasing productivity.</p>
+    <p>Using data from the U.S. Survey of Working Arrangements and Attitudes (SWAA) we can see how often the average worker worked from home during the pandemic, and 3 years later.</p>
+    <img class="animate" src="images/wfhcovid_frac/wfhcovid_frac_map1.pdf">
+    <p>While the average share of paid working days worked from home decreased in most states since May 2020, the mode in May 2023 is between 25-50%, which is far above 5%, the average amount of WFH workdays before COVID (Barrero et al., 2021).</p>
+    <p>Companies were initially forced into remote policies, and some were better equipped than others. This meant a lot of time and money was invested in learning to WFH effectively. In October 2020, the average amount of money spent on WFH-related equipment or infrastructure per worker was over $1,000.</p>
+    <p>Assuming half of the U.S. population is in some form of employment, this amounts to over $150 billion spent across the U.S. on WFH-related equipment or infrastructure, which is about half a percent of the U.S. gross domestic product.</p>
+    <p>This huge surge in demand lead to thousands of new technological innovations. The rate of WFH-related patent application has grown year over year every year since 2019.</p>
+    <img src="images/monthly_stats.pdf">
+    <p>However, the flexibility to WFH is only really feasible for certain employees. These employees tend to have higher education and income.</p>
+    <p>Some employees really started to value the option to work from home, but many employers do not feel the same way.</p>
+    <p>So, what can employers do? Follow the research to understand the effects of flexible work arrangements and use the tool below to see how various subgroups tend to value it.</p>
+    <img src="images/heatmap.pdf">
+    <p class="caption">Exhibit 3: Heatmap of WFH </p>
+    </div>
+  </body>
 </html>
