@@ -42,3 +42,8 @@ p {
 .big_picture {
     max-width: 1000px;
 }
+
+.ital {
+    font-style: italic;
+    text-align: center;
+}
